@@ -1,12 +1,16 @@
 ---
-layout: page
+layout: post
 title: 링크 테스트
+date: 2022-11-18 23:59 +0800
+tags: [jekyll theme, jekyll, tutorial]
+toc:  true
 ---
 
-## [수업 내용](../darktemi.github.io/_posts/_class/2022-11-18-day10.md)
 
-## [MD란 무엇인가?](/darktemi.github.io/_posts/_class/2022-11-18-MD(MarkDown).md)
+## [수업 내용](/darktemi90/day10.md)
 
-## [하이퍼 바이저란 무엇인가?](/darktemi.github.io/_posts/_class/2022-11-18-Hypervisor.md)
+## [MD란 무엇인가?](/darktemi90/_posts/class.markdown)
 
-## [Vagrant로 centOS 생성 및 설정](/darktemi.github.io/_posts/2022-11-18-CentOS.md)
+## [하이퍼 바이저란 무엇인가?](/darktemi90/hyper.md)
+
+## [Vagrant로 centOS 생성 및 설정](/darktemi90/centos.md)
