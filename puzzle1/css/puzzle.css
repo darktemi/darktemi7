@@ -1,0 +1,29 @@
+#wrap{
+  position:relative;
+  display:inline-block;
+  top:150px;
+  border : 1px solid;
+  border-radius: 10px;
+
+
+}
+.input{
+  position: relative;
+  display : inline-block;
+  width:100px;
+  height:50px;
+  top :200px;
+  right:250px;
+
+}
+
+body{
+text-align: center;
+position: relative;
+
+}
+
+#td.animate td{
+  -webkit-transition: 0.15s left, 0.15s top;
+  transition: 0.15s left, 0.15s top;
+}
