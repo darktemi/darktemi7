@@ -1,7 +1,7 @@
-var puz = [["image/1.jpg","image/2.jpg","image/3.jpg","image/4.jpg",],
-["image/5.jpg","image/6.jpg","image/7.jpg","image/8.jpg"],
-["image/9.jpg","image/10.jpg","image/11.jpg","image/12.jpg"],
-["image/13.jpg","image/14.jpg","image/15.jpg","image/33.jpg"]];
+var puz = [["image/00.jpg","image/01.jpg","image/02.jpg","image/03.jpg",],
+["image/10.jpg","image/11.jpg","image/12.jpg","image/13.jpg"],
+["image/20.jpg","image/21.jpg","image/22.jpg","image/23.jpg"],
+["image/30.jpg","image/31.jpg","image/32.jpg","image/33.jpg"]];
 			
 var x, y, i, j, s1, s2, s3, s4, temp;
 var c1,c2, c3, c4;
@@ -57,10 +57,10 @@ function sort(){
 
 function solve(){
 
-puz =  [["image/1.jpg","image/2.jpg","image/3.jpg","image/4.jpg",],
-	["image/5.jpg","image/6.jpg","image/7.jpg","image/8.jpg"],
-	["image/9.jpg","image/10.jpg","image/11.jpg","image/12.jpg"],
-	["image/13.jpg","image/14.jpg","image/15.jpg","image/33.jpg"]];
+puz =  [["image/00.jpg","image/01.jpg","image/02.jpg","image/03.jpg",],
+	["image/10.jpg","image/11.jpg","image/12.jpg","image/13.jpg"],
+	["image/20.jpg","image/21.jpg","image/22.jpg","image/23.jpg"],
+	["image/30.jpg","image/31.jpg","image/32.jpg","image/33.jpg"]];
 			
         in_puzzle();
 }

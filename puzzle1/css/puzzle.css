@@ -23,7 +23,3 @@ position: relative;
 
 }
 
-#td.animate td{
-  -webkit-transition: 0.15s left, 0.15s top;
-  transition: 0.15s left, 0.15s top;
-}
