@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>4x4 Puzzle</title>
 	<link rel="stylesheet" href="css/puzzle.css">
+	<title>Document</title>
 </head>
 <body>
-	<div><h1>4x4 퍼즐 맞추기</h1></div>
-	<div id="puzzle"></div>
-	<div id="controls">
-		<button id="scramble">섞기</button>
+	<script src="js/puzzle.js"></script>
+	<div id="table">
+		<script src="js/puzzle-table.js"></script>
 	</div>
-	
-		<script src="js/puzzle.js"></script>
+	<input class="input" type="button" value="섞기" onclick="sort()">
+	<input class="input" type="button" value="초기화" onclick="solve()">
 </body>
 </html>

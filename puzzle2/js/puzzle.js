@@ -1,157 +1,63 @@
-var puzzle = document.getElementById('puzzle');
+var puz = [["image/00.jpg","image/01.jpg","image/02.jpg","image/03.jpg"],
+["image/10.jpg","image/11.jpg","image/12.jpg","image/13.jpg"],
+["image/20.jpg","image/21.jpg","image/22.jpg","image/23.jpg"],
+["image/30.jpg","image/31.jpg","image/32.jpg","image/33.jpg"]];
 
-// solve 함수 호출
-solve();
+var x, y, i, j, s1, s2, s3, s4, c1, c2, c3, c4, temp;
 
-// 퍼즐 셀 클릭 이벤트
-puzzle.addEventListener('click', function(e){
-		// 슬라이딩 애니메이션 사용
-		puzzle.className = 'animate';
-		shiftCell(e.target);
+function in_puzzle() {
+			document.getElementById('p00').src = puz[0][0];
+			document.getElementById('p01').src = puz[0][1];
+			document.getElementById('p02').src = puz[0][2];
+			document.getElementById('p03').src = puz[0][3];
+			document.getElementById('p10').src = puz[1][0];
+			document.getElementById('p11').src = puz[1][1];
+			document.getElementById('p12').src = puz[1][2];
+			document.getElementById('p13').src = puz[1][3];
+			document.getElementById('p20').src = puz[2][0];
+			document.getElementById('p21').src = puz[2][1];
+			document.getElementById('p22').src = puz[2][2];
+			document.getElementById('p23').src = puz[2][3];
+			document.getElementById('p30').src = puz[3][0];
+			document.getElementById('p31').src = puz[3][1];
+			document.getElementById('p32').src = puz[3][2];
+			document.getElementById('p33').src = puz[3][3];
+};
+
+function puzzle(x, y) {
+	if(x>0 && puz[x-1][y] == 'image/33.jpg') {change(x,y,x-1,y);}
+	if(x<4 && pux[x+1][y] == 'image/33.jpg') {change(x,y,x+1,y);}
+	if(y>0 && puz[x][y-1] == 'image/33.jpg') {change(x,y,x,y-1);}
+	if(y<4 && puz[x][y+1] == 'image/33.jpg') {change(x,y,x,y+1);}
+};
+
+function change(c1, c2, c3, c4) {
+	temp = puz[c1][c2];
+	puz[c1][c2] = puz[c3][c4];
+	puz[c3][c4] = temp;
+
+	in_puzzle();
+}
+
+function sort() {
+	for(i=0; i<20; i++) {
+		s1 = Mate.floor(Math.random()*4);
+		s2 = Mate.floor(Math.random()*4);
+		s3 = Mate.floor(Math.random()*4);
+		s4 = Mate.floor(Math.random()*4);
+		temp = puz[s1][s2];
+		puz[s1][s2] = puz[s3][s4];
+		puz[s3][s4] = temp;
 	}
-);
-
-// scramble에서 클릭 이벤트 발생 시 scramble함수 실행
-document.getElementById('scramble').addEventListener('click', scramble);
-
-// 해결된 퍼즐을 만듭니다.
-function solve(){
-	
-	puzzle.innerHTML = '';
-	
-	var n = 1;
-	for(var i = 0; i <= 3; i++){
-		for(var j = 0; j <= 3; j++){
-			var cell = document.createElement('span');
-			cell.id = 'cell-'+i+'-'+j;
-			cell.style.left = (j*80+1*j+1)+'px';
-			cell.style.top = (i*80+1*i+1)+'px';
-			
-			if(n <= 15){
-				cell.classList.add('number');
-				cell.classList.add((i%2==0 && j%2>0 || i%2>0 && j%2==0) ? 'dark' : 'light');
-				cell.innerHTML = (n++).toString();
-			} else {
-				cell.className = 'empty';
-			}
-			puzzle.appendChild(cell);
-		}
-	}
+	in_puzzle();
 }
 
-// 숫자 셀을 빈 셀로 이동
-function shiftCell(cell){
-	// 선택한 셀에 번호가 있는지 확인
-	if(cell.clasName != 'empty'){
-		// 빈 인접 셀을 비우려고 함
-		var emptyCell = getEmptyAdjacentCell(cell);
-		if(emptyCell){
-			// 임시 데이터
-			var tmp = {style: cell.style.cssText, id: cell.id};
-			// ID 및 스타일 값 교환
-			cell.style.cssText = emptyCell.style.cssText;
-			cell.id = emptyCell.id;
-			emptyCell.style.cssText = tmp.style;
-			emptyCell.id = tmp.id;
-			// 번호 순서를 확인
-			setTimeout(checkOrder, 150);
-		}
-	}
-}
-	
+function solve() {
+	puz = [["image/00.jpg","image/01.jpg","image/02.jpg","image/03.jpg",],
+	["image/10.jpg","image/11.jpg","image/12.jpg","image/13.jpg"],
+	["image/20.jpg","image/21.jpg","image/22.jpg","image/23.jpg"],
+	["image/30.jpg","image/31.jpg","image/32.jpg","image/33.jpg"]];
 
-// 행 및 열별로 특정 셀을 가져옴
-
-function getCell(row, col) {
-	return document.getElementById('cell-'+row+'-'+col);
+	in_puzzle();
 }
 
-// 빈 셀을 가져옴
-
-function getEmptyCell() {
-	return puzzle.querySelector('.empty');
-}
-
-// 인접 셀이 있는 경우 빈 셀을 가져옴
-function getEmptyAdjacentCell(cell){
-	// 모든 인접 셀을 가져옴
-	var adjacent = getAdjacentCells(cell);
-	// 빈 셀을 검색
-	for(var i = 0; i < adjacent.length; i++){
-		if(adjacent[i].className == 'empty'){
-			return adjacent[i];
-		}
-	}
-	// 빈 인접 셀을 찾을 수 없음
-	return false;
-}
-
-// 모든 인접 셀을 가져옴
-
-function getAdjacentCells(cell){
-	var id = cell.id.split('-');
-	// 셀 위치 인덱스를 가져옴
-	var row = parseInt(id[1]);
-	var col = parseInt(id[2]);
-	var adjacent = [];
-	// 가능한 모든 인접 셀을 가져옴
-	if(row < 3){adjacent.push(getCell(row+1, col));}			
-	if(row > 0){adjacent.push(getCell(row-1, col));}
-	if(col < 3){adjacent.push(getCell(row, col+1));}
-	if(col > 0){adjacent.push(getCell(row, col-1));}
-	return adjacent;
-}
-
-// 숫자 순서가 올바른지 확인
-function checkOrder(){
-	// 빈 셀이 올바른 위치에 있는지 확인
-	if(getCell(3, 3).className != 'empty'){
-		return;
-	}
-
-	var n = 1;
-	// 모든 셀의 번호를 확인
-	for(var i = 0; i <= 3; i++){
-		for(var j = 0; j <= 3; j++){
-			if(n <= 15 && getCell(i, j).innerHTML != n.toString()){
-				// Order가 올바르지 않음
-				return;
-			}
-			n++;
-		}
-	}
-	// 퍼즐 해결! 섞을지 알림창
-	if(confirm('Congrats, You did it! \nScramble the puzzle?')){
-		scramble();
-	}
-}
-
-// 퍼즐 섞기
-function scramble(){
-	puzzle.removeAttribute('class');
-	var previousCell;
-	var i = 1;
-	var interval = setInterval(function(){
-		if(i <= 100){
-			var adjacent = getAdjacentCells(getEmptyCell());
-			if(previousCell){
-				for(var j = adjacent.length-1; j >= 0; j--){
-					if(adjacent[j].innerHTML == previousCell.innerHTML){
-						adjacent.splice(j, 1);
-					}
-				}
-			}
-			// 임의의 인접 셀을 가져와 다음 반복을 위해 기억함
-			previousCell = adjacent[rand(0, adjacent.length-1)];
-			shiftCell(previousCell);
-			i++;
-		} else {
-			clearInterval(interval);
-		}
-	}, 5);
-}
-
-// 난수 생성
-function rand(from, to){
-	return Math.floor(Math.random() * (to - from + 1)) + from;
-}
