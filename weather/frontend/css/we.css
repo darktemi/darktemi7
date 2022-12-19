@@ -1,0 +1,331 @@
+#seweather {
+  /* border: 1px solid black; */
+  width: 120px;
+  height: 150px;
+  position: absolute;
+  margin-left: 135px;
+  margin-top: 95px;
+  font-size: 20px;
+}
+
+#seweather > #sename{
+  text-align: center;
+  margin-left: 35px;
+  margin-top:20px;
+  /* border: 1px solid black; */
+  width: 45px;
+  height: 25px;
+}
+
+#seweather > #seim{
+  text-align: center;
+  margin-left: 35px;
+  margin-top:15px;
+  /* border: 1px solid black; */
+  width: 45px;
+  height: 45px;
+}
+
+#seweather > #setm {
+  text-align: center;
+  margin-left: 20px;
+  margin-top:10px;
+  /* border: 1px solid black; */
+  width: 30px;
+  height: 30px;
+}
+
+#seweather > #sereh {
+  text-align: center;
+  margin-left: 60px;
+  margin-top:-30px;
+  /* border: 1px solid black; */
+  width: 30px;
+  height: 30px;
+}
+
+#incheonweather {
+  /* border: 1px solid black; */
+  width: 120px;
+  height: 150px;
+  position: absolute;
+  margin-top: 80px;
+  margin-left: 80px;
+  font-size: 20px;
+}
+
+#incheonweather > #incheonname{
+  text-align: center;
+  margin-left: 35px;
+  margin-top:20px;
+  /* border: 1px solid black; */
+  width: 45px;
+  height: 25px;
+}
+
+#incheonweather > #incheonim{
+  text-align: center;
+  margin-left: 35px;
+  margin-top:15px;
+  /* border: 1px solid black; */
+  width: 45px;
+  height: 45px;
+}
+
+#incheonweather > #incheontm {
+  text-align: center;
+  margin-left: 20px;
+  margin-top:10px;
+  /* border: 1px solid black; */
+  width: 30px;
+  height: 30px;
+}
+
+#incheonweather > #incheonreh {
+  text-align: center;
+  margin-left: 60px;
+  margin-top:-30px;
+  /* border: 1px solid black; */
+  width: 30px;
+  height: 30px;
+}
+
+#chuncheonweather {
+  /* border: 1px solid black; */
+  width: 120px;
+  height: 150px;
+  position: absolute;
+  margin-top: 80px;
+  margin-left: 250px;
+  font-size: 20px;
+}
+
+#chuncheonweather > #chuncheonname{
+  text-align: center;
+  margin-left: 35px;
+  margin-top:20px;
+  /* border: 1px solid black; */
+  width: 45px;
+  height: 25px;
+}
+
+#chuncheonweather > #chuncheonim{
+  text-align: center;
+  margin-left: 35px;
+  margin-top:15px;
+  /* border: 1px solid black; */
+  width: 45px;
+  height: 45px;
+}
+
+#chuncheonweather > #chuncheontm {
+  text-align: center;
+  margin-left: 20px;
+  margin-top:10px;
+  /* border: 1px solid black; */
+  width: 30px;
+  height: 30px;
+}
+
+#chuncheonweather > #chuncheonreh {
+  text-align: center;
+  margin-left: 60px;
+  margin-top:-30px;
+  /* border: 1px solid black; */
+  width: 30px;
+  height: 30px;
+}
+
+#daejeonweather {
+  /* border: 1px solid black; */
+  width: 120px;
+  height: 150px;
+  position: absolute;
+  margin-top: 250px;
+  margin-left: 165px;
+  font-size: 20px;
+}
+
+#daejeonweather > #daejeonname{
+  text-align: center;
+  margin-left: 35px;
+  margin-top:20px;
+  /* border: 1px solid black; */
+  width: 45px;
+  height: 25px;
+}
+
+#daejeonweather > #daejeonim{
+  text-align: center;
+  margin-left: 35px;
+  margin-top:15px;
+  /* border: 1px solid black; */
+  width: 45px;
+  height: 45px;
+}
+
+#daejeonweather > #daejeontm {
+  text-align: center;
+  margin-left: 20px;
+  margin-top:10px;
+  /* border: 1px solid black; */
+  width: 30px;
+  height: 30px;
+}
+
+#daejeonweather > #daejeonreh {
+  text-align: center;
+  margin-left: 60px;
+  margin-top:-30px;
+  /* border: 1px solid black; */
+  width: 30px;
+  height: 30px;
+}
+
+#daeguweather {
+  /* border: 1px solid black; */
+  width: 120px;
+  height: 150px;
+  position: absolute;
+  margin-top: 328px;
+  margin-left: 284px;
+  font-size: 20px;
+}
+
+#daeguweather > #daeguname{
+  text-align: center;
+  margin-left: 35px;
+  margin-top:20px;
+  /* border: 1px solid black; */
+  width: 45px;
+  height: 25px;
+}
+
+#daeguweather > #daeguim{
+  text-align: center;
+  margin-left: 35px;
+  margin-top:15px;
+  /* border: 1px solid black; */
+  width: 45px;
+  height: 45px;
+}
+
+#daeguweather > #daegutm {
+  text-align: center;
+  margin-left: 20px;
+  margin-top:10px;
+  /* border: 1px solid black; */
+  width: 30px;
+  height: 30px;
+}
+
+#daeguweather > #daegureh {
+  text-align: center;
+  margin-left: 60px;
+  margin-top:-30px;
+  /* border: 1px solid black; */
+  width: 30px;
+  height: 30px;
+}
+
+#busanweather {
+  /* border: 1px solid black; */
+  width: 120px;
+  height: 150px;
+  position: absolute;
+  margin-top: 375px;
+  margin-left: 360px;
+  font-size: 20px;
+}
+
+#busanweather > #busanname{
+  text-align: center;
+  margin-left: 35px;
+  margin-top:20px;
+  /* border: 1px solid orange; */
+  width: 45px;
+  height: 25px;
+}
+
+#busanweather > #busanim{
+  text-align: center;
+  margin-left: 35px;
+  margin-top:15px;
+  /* border: 1px solid red; */
+  width: 45px;
+  height: 45px;
+}
+
+#busanweather > #busantm {
+  text-align: center;
+  margin-left: 20px;
+  margin-top:10px;
+  /* border: 1px solid green; */
+  width: 30px;
+  height: 30px;
+}
+
+#busanweather > #busanreh {
+  text-align: center;
+  margin-left: 60px;
+  margin-top: -30px;
+  /* border: 1px solid blue; */
+  width: 30px;
+  height: 30px;
+}
+
+#gwangjuweather {
+  /* border: 1px solid black; */
+  width: 120px;
+  height: 150px;
+  position: absolute;
+  margin-top: 405px;
+  margin-left: 90px;
+  font-size: 20px;
+}
+
+#gwangjuweather > #gwangjuname{
+  text-align: center;
+  margin-left: 35px;
+  margin-top:20px;
+  /* border: 1px solid orange; */
+  width: 45px;
+  height: 25px;
+}
+
+#gwangjuweather > #gwangjuim{
+  text-align: center;
+  margin-left: 35px;
+  margin-top:15px;
+  /* border: 1px solid red; */
+  width: 45px;
+  height: 45px;
+}
+
+#gwangjuweather > #gwangjutm {
+  text-align: center;
+  margin-left: 20px;
+  margin-top:10px;
+  /* border: 1px solid green; */
+  width: 30px;
+  height: 30px;
+}
+
+#gwangjuweather > #gwangjureh {
+  text-align: center;
+  margin-left: 60px;
+  margin-top: -30px;
+  /* border: 1px solid blue; */
+  width: 30px;
+  height: 30px;
+}
+
+.container {
+  display: flex;
+  /* border: 1px red solid; */
+  width: 500px;
+  height: 620px;
+  background-image: url(/frontend/image/map.jpg);
+  background-size: cover;
+  margin: 0px;
+}
