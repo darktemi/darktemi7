@@ -35,36 +35,17 @@
     <div id="sereh"></div>
   </div>
 
-    <!-- <div id="status">
-      <div id="sename1"><b>서울</b></div>
-      <div id="seim1"></div>
-      <div id="setm1"></div>
-      <div id="sereh1"></div>
-    </div> -->
   </div>
-
- 
-
 
   <script>
     "use strict"
 
-    // var base_date = document.querySelector("#base_date");
-    // var nx = document.querySelector("#nx");
-    // var ny = document.querySelector("#ny");
-    // var ta = document.querySelector("#ta");
-    // var gm = document.querySelector("#gm");
-    //var gmweather = document.querySelector("#gmweather");
-    //var gmim = document.querySelector("#gmim")
-    //var gmreh = document.querySelector("#gmreh");
-    // 날짜
     let today = new Date();
 
     let year = today.getFullYear(); // 년도
     let month = today.getMonth() + 1;  // 월
     let date = today.getDate();  // 날짜
     let now = `${year}${month}${date}`;
-
 
     //광명
     (function weather() {
@@ -88,9 +69,6 @@
       let t1hvalue = arr.response.body.items.item[24].fcstValue;
       let rehvalue = arr.response.body.items.item[30].fcstValue;
 
-
-
-
       document.getElementById('gm').value = `SKY=${gmsky}:${gmskyvalue},온도=${t1h}:${t1hvalue}`;
       document.getElementById('gmtm').innerHTML = `${t1hvalue}℃`;
       document.getElementById('gmreh').innerHTML = `${rehvalue}%`;
@@ -111,25 +89,6 @@
       } else {
         gmim.innerHTML = "<img src='snow.PNG' width='40px' height='40px'>";
       }
-
-
-
-      //   if (gmpty == 0) {
-      //     if (gmskyvalue == 1){
-      //       gmim.innerHTMl = "맑음";
-      //     } else if (gmskyvalue == 3){
-      //       gmim.innerHTMl = "구름많음";
-      //     } else if (gmskyvalue == 4){
-      //       gmim.innerHTML = "흐림";
-      //     }
-      // } else if(gmpty == 1 || gmpty == 2 || gmpty == 5 || gmpty == 6){
-      //       gmim.innerHTML = "비옴";
-      // } else {
-      //       gmim.innerHTML = "눈옴";
-      // }
-
-
-
 
     }());
 
@@ -166,49 +125,12 @@
         seim.innerHTML = "<img src='snow.PNG' width='40px' height='40px'>";
       }
     }());
-// -----------------------------------------------------------------------------------
-
-        //서울
-    //     (function weather_se1() {
-    //   var xhr = new XMLHttpRequest();
-    //   xhr.open("GET",
-    //     "http://localhost:3000/proxy2?base_date=" + now +
-    //     "&nx=" + 60 + "&ny=" + 127, false);
-    //   xhr.send();
-    //   const arr = JSON.parse(xhr.responseText);
-    //   let gmsky = arr.response.body.items.item[18].category;
-    //   let gmskyvalue = arr.response.body.items.item[18].fcstValue;
-    //   let gmpty = arr.response.body.items.item[6].fcstValue;
-    //   let t1h = arr.response.body.items.item[24].category;
-    //   let t1hvalue = arr.response.body.items.item[24].fcstValue;
-    //   let rehvalue = arr.response.body.items.item[30].fcstValue;
-
-    //   document.getElementById('setm1').innerHTML = `${t1hvalue}℃`;
-    //   document.getElementById('sereh1').innerHTML = `${rehvalue}%`;
-
-
-    //   if (gmpty == 0) {
-    //     if (gmskyvalue == 1) {
-    //       seim1.innerHTML = "<img src='sun.JPG' width='40px' height='40px'>";
-    //     } else if (gmskyvalue == 3) {
-    //       seim1.innerHTML = "<img src='cloud.PNG' width='40px' height='40px'>";
-    //     } else {
-    //       seim1.innerHTML = "<img src='blur.PNG' width='40px' height='40px'>";
-    //     }
-    //   } else if (gmpty == 1 || gmpty == 2 || gmpty == 5 || gmpty == 6) {
-    //     seim1.innerHTML = "<img src='rain.PNG' width='40px' height='40px'>";
-    //   } else {
-    //     seim1.innerHTML = "<img src='snow.PNG' width='40px' height='40px'>";
-    //   }
-    // }());
-
-
 
     //이벤트리스너 클릭 해본거
-      let b = document.getElementById('seweather')
     let a = document.querySelector('#sebtn');
-    let d = document.getElementById('gmweather')
+    let b = document.getElementById('seweather')
     let c = document.querySelector('#gmbtn');
+    let d = document.getElementById('gmweather')
     a.addEventListener('click', weather_se12);
     function weather_se12() {
       d.style.display = 'none';
@@ -220,6 +142,9 @@
       d.style.display = (d.style.display != 'none')?"none":"block";
       b.style.display = 'none';
   }
+
+  weather_se12();
+  weather_gm12();
 
     // hide 쓴거
     // function hide(){

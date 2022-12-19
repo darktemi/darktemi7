@@ -26,16 +26,16 @@ let now = `${year}${month}${date}`;
 
   if (gmpty == 0) {
     if (gmskyvalue == 1) {
-      seim.innerHTML = "<img src='/frontend/image/sun.jpg' width='40px' height='40px'>";
+      seim.setAttribute('class', 'sun');
     } else if (gmskyvalue == 3) {
-      seim.innerHTML = "<img src='/frontend/image/cloud.jpg' width='40px' height='40px'>";
+      seim.setAttribute('class', 'cloud');
     } else {
-      seim.innerHTML = "<img src='/frontend/image/blur.jpg' width='40px' height='40px'>";
+      seim.setAttribute('class', 'blur');
     }
   } else if (gmpty == 1 || gmpty == 2 || gmpty == 5 || gmpty == 6) {
-    seim.innerHTML = "<img src='/frontend/image/rain.jpg' width='40px' height='40px'>";
+    seim.setAttribute('class', 'rain');
   } else {
-    seim.innerHTML = "<img src='/frontend/image/snow.jpg' width='40px' height='40px'>";
+    seim.setAttribute('class', 'snow');
   }
 }());
 
@@ -60,16 +60,16 @@ let now = `${year}${month}${date}`;
 
   if (gmpty == 0) {
     if (gmskyvalue == 1) {
-      incheonim.innerHTML = "<img src='/frontend/image/sun.jpg' width='40px' height='40px'>";
+      incheonim.setAttribute('class', 'sun');
     } else if (gmskyvalue == 3) {
-      incheonim.innerHTML = "<img src='/frontend/image/cloud.jpg' width='40px' height='40px'>";
+      incheonim.setAttribute('class', 'cloud');
     } else {
-      incheonim.innerHTML = "<img src='/frontend/image/blur.jpg' width='40px' height='40px'>";
+      incheonim.setAttribute('class', 'blur');
     }
   } else if (gmpty == 1 || gmpty == 2 || gmpty == 5 || gmpty == 6) {
-    incheonim.innerHTML = "<img src='/frontend/image/rain.jpg' width='40px' height='40px'>";
+    incheonim.setAttribute('class', 'rain');
   } else {
-    incheonim.innerHTML = "<img src='/frontend/image/snow.jpg' width='40px' height='40px'>";
+    incheonim.setAttribute('class', 'snow');
   }
 }());
 
@@ -94,16 +94,16 @@ let now = `${year}${month}${date}`;
 
   if (chuncheonpty == 0) {
     if (chuncheonskyvalue == 1) {
-      chuncheonim.innerHTML = "<img src='/frontend/image/sun.jpg' width='40px' height='40px'>";
+      chuncheonim.setAttribute('class', 'sun');
     } else if (chuncheonskyvalue == 3) {
-      chuncheonim.innerHTML = "<img src='/frontend/image/cloud.jpg' width='40px' height='40px'>";
+      chuncheonim.setAttribute('class', 'cloud');
     } else {
-      chuncheonim.innerHTML = "<img src='/frontend/image/blur.jpg' width='40px' height='40px'>";
+      chuncheonim.setAttribute('class', 'blur');
     }
   } else if (gmpty == 1 || gmpty == 2 || gmpty == 5 || gmpty == 6) {
-    chuncheonim.innerHTML = "<img src='/frontend/image/rain.jpg' width='40px' height='40px'>";
+    chuncheonim.setAttribute('class', 'rain');
   } else {
-    chuncheonim.innerHTML = "<img src='/frontend/image/snow.jpg' width='40px' height='40px'>";
+    chuncheonim.setAttribute('class', 'snow');
   }
 }());
 
@@ -128,16 +128,16 @@ let now = `${year}${month}${date}`;
 
   if (daejeonpty == 0) {
     if (daejeonskyvalue == 1) {
-      daejeonim.innerHTML = "<img src='/frontend/image/sun.jpg' width='40px' height='40px'>";
+      daejeonim.setAttribute('class', 'sun');
     } else if (daejeonskyvalue == 3) {
-      daejeonim.innerHTML = "<img src='/frontend/image/cloud.jpg' width='40px' height='40px'>";
+      daejeonim.setAttribute('class', 'cloud');
     } else {
-      daejeonim.innerHTML = "<img src='/frontend/image/blur.jpg' width='40px' height='40px'>";
+      daejeonim.setAttribute('class', 'blur');
     }
   } else if (gmpty == 1 || gmpty == 2 || gmpty == 5 || gmpty == 6) {
-    daejeonim.innerHTML = "<img src='/frontend/image/rain.jpg' width='40px' height='40px'>";
+    daejeonim.setAttribute('class', 'rain');
   } else {
-    daejeonim.innerHTML = "<img src='/frontend/image/snow.jpg' width='40px' height='40px'>";
+    daejeonim.setAttribute('class', 'snow');
   }
 }());
 
@@ -162,16 +162,16 @@ let now = `${year}${month}${date}`;
 
   if (daegupty == 0) {
     if (daeguskyvalue == 1) {
-      daeguim.innerHTML = "<img src='/frontend/image/sun.jpg' width='40px' height='40px'>";
+      daeguim.setAttribute('class', 'sun');
     } else if (daeguskyvalue == 3) {
-      daeguim.innerHTML = "<img src='/frontend/image/cloud.jpg' width='40px' height='40px'>";
+      daeguim.setAttribute('class', 'cloud');
     } else {
-      daeguim.innerHTML = "<img src='/frontend/image/blur.jpg' width='40px' height='40px'>";
+      daeguim.setAttribute('class', 'blur');
     }
   } else if (gmpty == 1 || gmpty == 2 || gmpty == 5 || gmpty == 6) {
-    daeguim.innerHTML = "<img src='/frontend/image/rain.jpg' width='40px' height='40px'>";
+    daeguim.setAttribute('class', 'rain');
   } else {
-    daeguim.innerHTML = "<img src='/frontend/image/snow.jpg' width='40px' height='40px'>";
+    daeguim.setAttribute('class', 'snow');
   }
 }());
 
@@ -197,16 +197,16 @@ let now = `${year}${month}${date}`;
 
   if (busanpty == 0) {
     if (busanskyvalue == 1) {
-      busanim.innerHTML = "<img src='/frontend/image/sun.jpg' width='40px' height='40px'>";
+      busanim.setAttribute('class', 'sun');
     } else if (busanskyvalue == 3) {
-      busanim.innerHTML = "<img src='/frontend/image/cloud.jpg' width='40px' height='40px'>";
+      busanim.setAttribute('class', 'cloud');
     } else {
-      busanim.innerHTML = "<img src='/frontend/image/blur.jpg' width='40px' height='40px'>";
+      busanim.setAttribute('class', 'blur');
     }
   } else if (gmpty == 1 || gmpty == 2 || gmpty == 5 || gmpty == 6) {
-    busanim.innerHTML = "<img src='/frontend/image/rain.jpg' width='40px' height='40px'>";
+    busanim.setAttribute('class', 'rain');
   } else {
-    busanim.innerHTML = "<img src='/frontend/image/snow.jpg' width='40px' height='40px'>";
+    busanim.setAttribute('class', 'snow');
   }
 }());
 
@@ -231,15 +231,15 @@ let now = `${year}${month}${date}`;
 
   if (gwangjupty == 0) {
     if (gwangjuskyvalue == 1) {
-      gwangjuim.innerHTML = "<img src='/frontend/image/sun.jpg' width='40px' height='40px'>";
+      gwangjuim.setAttribute('class', 'sun');
     } else if (gwangjuskyvalue == 3) {
-      gwangjuim.innerHTML = "<img src='/frontend/image/cloud.jpg' width='40px' height='40px'>";
+      gwangjuim.setAttribute('class', 'cloud');
     } else {
-      gwangjuim.innerHTML = "<img src='/frontend/image/blur.jpg' width='40px' height='40px'>";
+      gwangjuim.setAttribute('class', 'blur');
     }
   } else if (gmpty == 1 || gmpty == 2 || gmpty == 5 || gmpty == 6) {
-    gwangjuim.innerHTML = "<img src='/frontend/image/rain.jpg' width='40px' height='40px'>";
+    gwangjuim.setAttribute('class', 'rain');
   } else {
-    gwangjuim.innerHTML = "<img src='/frontend/image/snow.jpg' width='40px' height='40px'>";
+    gwangjuim.setAttribute('class', 'snow');
   }
 }());
