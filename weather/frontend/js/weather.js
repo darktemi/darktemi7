@@ -14,10 +14,8 @@ function weather(x, y, tm, reh, location) {
   xhr.send();
   const arr = JSON.parse(xhr.responseText);
   console.log(arr);
-  let sky = arr.response.body.items.item[18].category;
   let skyvalue = arr.response.body.items.item[18].fcstValue;
   let pty = arr.response.body.items.item[6].fcstValue;
-  let t1h = arr.response.body.items.item[24].category;
   let t1hvalue = arr.response.body.items.item[24].fcstValue;
   let rehvalue = arr.response.body.items.item[30].fcstValue;
 

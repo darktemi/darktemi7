@@ -104,7 +104,7 @@
 #daejeonweather > #daejeontm, #daeguweather > #daegutm, #busanweather > #busantm,
 #gwangjuweather > #gwangjutm{
   text-align: center;
-  margin-left: 20px;
+  margin-left: 0px;
   margin-top:10px;
   /* border: 1px solid black; */
   width: 30px;
