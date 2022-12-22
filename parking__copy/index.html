@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Parking lot</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+    $(function () {
+      $("#accordion").accordion();
+    });
+  </script>
+  <style>
+    #map {
+      border: 1px red solid;
+      width: 500px;
+      height: 500px;
+      float: left;
+    }
+
+    #accordion {
+      border: 1px red solid;
+      width: 500px;
+      height: 500px;
+      display: inline-block;
+    }
+
+    .btn {
+      border: 1px solid black;
+      width: 70px;
+      height: 30px;
+    }
+
+    .two {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="map">
+    <div class="btn" onclick="seven(49, 101, 101, 101, 101 ,101, 101)">세곡동</div>
+    <div class="btn" onclick="seven(32, 101, 101, 101, 101, 101, 101)">도곡2동</div>
+    <div class="btn" onclick="seven(17, 101, 101, 101, 101, 101, 101)">율현동</div>
+    <div class="btn" onclick="seven(12, 42, 101, 101, 101, 101, 101)">도곡동</div>
+    <div class="btn" onclick="seven(19, 29, 101, 101, 101, 101, 101)">압구정동</div>
+    <div class="btn" onclick="seven(7, 8, 31, 101, 101, 101, 101)">청담동</div>
+    <div class="btn" onclick="seven(0, 1, 4, 34, 101, 101, 101)">논현동</div>
+    <div class="btn" onclick="seven(5, 6, 22, 36, 101, 101, 101)">신사동</div>
+    <div class="btn" onclick="seven(21, 44, 47, 48, 101, 101, 101)">일원동</div>
+    <div class="btn" onclick="seven(11, 23, 24, 27, 30, 101, 101)">역삼동</div>
+    <div class="btn" onclick="seven(37, 38, 39, 40, 41, 43, 46)">개포동</div>
+    <div class="btn" onclick="seven(9, 10, 15, 16, 18, 25, 33)">대치동</div>
+    <div class="btn" onclick="seven(2, 3, 13, 14, 26, 28, 45)">삼성동</div>
+  </div>
+
+  <div id="accordion">
+    <h3 id="title1"></h3>
+    <div id="text1"></div>
+    <h3 id="title2"></h3>
+    <div id="text2"></div>
+    <h3 id="title3"></h3>
+    <div id="text3"></div>
+    <h3 id="title4"></h3>
+    <div id="text4"></div>
+    <h3 id="title5"></h3>
+    <div id="text5"></div>
+    <h3 id="title6"></h3>
+    <div id="text6"></div>
+    <h3 id="title7"></h3>
+    <div id="text7"></div>
+  </div>
+
+  <script src="./js.js"></script>
+
+</body>
+
+</html>
