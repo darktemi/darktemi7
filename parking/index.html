@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Parking lot</title>
   <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="./parking.css">
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
   <script>
@@ -13,51 +14,29 @@
       $( "#accordion" ).accordion();
     } );
   </script>
-  <style>
-    #map {
-      border: 1px red solid;
-      width: 500px;
-      height: 500px;
-      float: left;
-    }
-    #accordion {
-      border: 1px red solid;
-      width: 500px;
-      height: 500px;
-      display: inline-block;
-    }
-  </style>
 </head>
 <body>
   <div id="map">
     map
   </div>
-  <div id="accordion">
-    <h3 id="title1">주차장명</h3>
-    <div>
-      주차장 정보
-    </div>
-    <h3>주차장명</h3>
-    <div>
-      주차장 정보
-    </div>
-    <h3>주차장명</h3>
-    <div>
-      주차장 정보
-      <ul>
-        <li>List item one</li>
-        <li>List item two</li>
-        <li>List item three</li>
-      </ul>
-    </div>
-    <h3>주차장명</h3>
-    <div>
-      주차장 정보
-    </div>
-    <h1>주차장명1</h1>
+  <div id="accordion" class="four">
+    <h3 id="title1"></h3>
+    <p id="text1"></p>
+    <h3 id="title2"></h3>
+    <p id="text2"></p>
+    <h3 id="title3"></h3>
+    <p id="text3"></p>
+    <h3 id="title4"></h3>
+    <p id="text4"></p>
+    <h3 id="title5"></h3>
+    <p id="text5"></p>
+    <h3 id="title6"></h3>
+    <p id="text6"></p>
+    <h3 id="title7"></h3>
+    <p id="text7"></p>
   </div>
 
-  <script src="./js.js"></script>
+  <script src="./parking.js"></script>
   
 </body>
 
