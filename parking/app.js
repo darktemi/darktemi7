@@ -10,7 +10,7 @@ app.get('/proxy2', (req, res) => {
   res.set('Access-Control-Allow-Origin', '*');
   res.set('Content-Type', 'application/json; charset=UTF-8');
 
-  let openApiUrl = "http://openapi.seoul.go.kr:8088/4e4a5361776f626835356947637144/json/GetParkInfo/1/1000/%EA%B0%95%EB%82%A8"
+  let openApiUrl = "http://openapi.seoul.go.kr:8088/4e4a5361776f626835356947637144/json/gangnamParingInfo/1/1000/"
 
   request.get({
     uri: openApiUrl
