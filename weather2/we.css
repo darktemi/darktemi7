@@ -4,6 +4,7 @@
   padding: 16px;
   font-size: 16px;
   /* border: none; */
+  cursor: pointer;
 }
 
 .dropdown {
@@ -187,4 +188,8 @@
   /* border: 1px solid black; */
   width: 30px;
   height: 30px;
+}
+
+#gmbtn, #sebtn {
+  cursor: pointer;
 }

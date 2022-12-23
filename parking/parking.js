@@ -74,7 +74,7 @@ function seven(a, b, c, d, e, f, g) {
 };
 
 
-seven(2, 3, 101, 101, 101, 101, 101);
+seven(2, 3);
 
 
 

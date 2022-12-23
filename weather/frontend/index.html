@@ -55,7 +55,39 @@
       <div id="gwangjureh"></div>
     </div>
   </div>
-  
+  <div class="dropdown">
+    <button class="dropbtn">지역 메뉴</button>
+    <div class="dropdown-content">
+      <a id="sebtn">서울</a>
+      <a id="inbtn">인천</a>
+      <a id="inbtn">춘천</a>
+      <a id="inbtn">대전</a>
+      <a id="inbtn">대구</a>
+      <a id="inbtn">부산</a>
+      <a id="inbtn">광주</a>
+    </div>
+  </div>
+  <script>
+    //이벤트리스너 클릭 해본거
+    let a = document.querySelector('#sebtn');
+    let b = document.getElementById('seweather')
+    let c = document.querySelector('#gmbtn');
+    let d = document.getElementById('gmweather')
+    a.addEventListener('click', weather_se12);
+    function weather_se12() {
+      d.style.display = 'none';
+      b.style.display = (b.style.display != 'none')?"none":"block";
+  }
+
+    c.addEventListener('click', weather_gm12);
+    function weather_gm12() {
+      d.style.display = (d.style.display != 'none')?"none":"block";
+      b.style.display = 'none';
+  }
+
+  weather_se12();
+  weather_gm12();
+  </script>
   <script src="/darktemi7/weather/frontend/js/weather.js"></script>
 </body>
 
