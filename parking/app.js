@@ -13,7 +13,7 @@ app.get('/proxy2', (req, res) => {
   let openApiUrl = "http://openapi.seoul.go.kr:8088/4e4a5361776f626835356947637144/json/gangnamParingInfo/1/1000/"
 
   request.get({
-    uri: openApiUrl
+    url: openApiUrl
   }, (error, response, body) => {
     res.send(body);
   });
