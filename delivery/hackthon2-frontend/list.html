@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>비트몰 배송관리시스템</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.ico" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: NiceAdmin - v2.5.0
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ============================================================================= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png">
+        <span class="d-none d-lg-block">배송관리시스템</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======================================================================================= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="index.html">
+          <i class="bi bi-grid"></i>
+          <span>전체 현황</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="form.html">
+          <i class="bi bi-journal-text"></i>
+          <span>신규 배송접수</span>
+        </a>
+      </li><!-- End 신규 배송접수 Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link" data-bs-target="#tables-nav" href="list.html">
+          <i class="bi bi-layout-text-window-reverse"></i>
+          <span>배송현황</span>
+        </a>
+      </li><!-- End 배송현황 Nav -->
+
+    </ul>
+
+  </aside><!-- End Sidebar-->
+
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>전체 배송현황</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item">배송현황</li>
+          <li class="breadcrumb-item active">전체 배송현황</li>
+        </ol>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <section class="section">
+      <div class="row">
+        <div class="col-12">
+          <div class="card recent-sales overflow-auto">
+            <div class="card-body">
+              <h5 class="card-title">배송현황</h5>
+              <table class="table table-borderless datatable">
+                <thead>
+                  <tr>
+                    <th scope="col">invNo</th>
+                    <th scope="col">발송인</th>
+                    <th scope="col">수취인</th>
+                    <th scope="col">운임비</th>
+                    <th scope="col">배송요청사항</th>
+                    <th scope="col">배송상태</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- 목록에서 해당하는 배송건의 invNo. 클릭 시 상세조회 페이지(view.html)로 이동-->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>NiceAdmin</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    let tbody = document.querySelector("tbody");
+    
+    function getPaym(paym) {
+  switch (paym) {
+    case 1: return "선불";
+    case 2: return "착불";
+    case 0: return "무료배송";
+    default: return "";
+  }
+}
+function getStatus(status) {
+  switch (status) {
+    case 1: return "배송중";
+    case 2: return "배송완료";
+    case 0: return "무료배송";
+    default: return "";
+  }
+}
+    fetch('http://localhost:8080/deliverys')
+      .then((response) => {return response.json();})
+      .then((obj) => {
+        let html = '';
+        for (let d of obj.data) {
+          html += `<tr>
+            <th scope="row"><a href="view.html?no=${d.no}">${d.invNo} </a></th>                        
+            <td>${d.senderName}</td>
+            <td>${d.reciverName}</td>
+            <td>${getPaym(d.paym)}</td>
+            <td>${d.msg}</td>
+            <td><span class="badge bg-success">${getStatus(d.status)}</span></td>
+            </tr>\n`;
+        }
+        // <span class="badge bg-warning">배송준비</span>
+        // <span class="badge bg-danger">배송중</span>
+        // <span class="badge bg-success">배송완료</span>
+        tbody.innerHTML = html;
+      })
+      .catch((err) => {
+        alert("서버 요청 오류!");
+        console.log(err);
+      });  
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+#
+<<<<<<< HEAD
+#Mon Jan 16 13:55:36 KST 2023
+=\=\=\=\=\=\=
+=======
+<<<<<<< HEAD
+#Mon Jan 16 11:52:05 KST 2023
+=======
+<<<<<<< HEAD
+#Mon Jan 16 11:50:07 KST 2023
+org.eclipse.jdt.core.compiler.codegen.inlineJsrBytecode=enabled
+=======
+#Mon Jan 16 11:28:42 KST 2023
+>>>>>>> f65faa0459e479f205fec44abcad2ad5c1890f69
+>>>>>>> 487931b5ba5360b1ebf6db4e4918281600cc1f42
+>>>>>>> 3d6cbafe6a515c0bc87a48af7624f7137593801e
+org.eclipse.jdt.core.compiler.problem.assertIdentifier=error
+org.eclipse.jdt.core.compiler.debug.localVariable=generate
+org.eclipse.jdt.core.compiler.codegen.unusedLocal=preserve
+eclipse.preferences.version=1
+>>>>>>>=f65faa0459e479f205fec44abcad2ad5c1890f69
+org.eclipse.jdt.core.compiler.problem.enumIdentifier=error
+org.eclipse.jdt.core.compiler.debug.sourceFile=generate
+org.eclipse.jdt.core.compiler.codegen.inlineJsrBytecode=enabled
+org.eclipse.jdt.core.compiler.codegen.targetPlatform=17
+org.eclipse.jdt.core.compiler.source=17
+org.eclipse.jdt.core.compiler.debug.lineNumber=generate
+<<<<<<<=HEAD
+org.eclipse.jdt.core.compiler.compliance=17
